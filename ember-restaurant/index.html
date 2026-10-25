@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember &amp; Spice – Bangladeshi kitchen, Chattogram</title>
+<meta name="description" content="Ember & Spice – slow-cooked Bangladeshi food. View the menu, order on WhatsApp or book a table. Demo website.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+ <a href="#top" class="logo">Ember<span>&amp;</span>Spice</a>
+ <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+ <nav id="links"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#reserve" class="btn sm">Book a table</a></nav>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap hg">
+ <div>
+  <span class="tag">Open daily · 12pm – 11pm</span>
+  <h1>Bangladeshi flavours, cooked the slow way.</h1>
+  <p>Dum biryani, wood-smoked kebabs and rich curries made from family recipes with fresh spices ground every morning.</p>
+  <div class="cta"><a href="#menu" class="btn big">Explore the menu</a><a href="#reserve" class="btn big out">Book a table</a></div>
+  <div class="facts"><div><b>4.8★</b>2,400+ reviews</div><div><b>12 yrs</b>of cooking</div><div><b>100%</b>halal kitchen</div></div>
+ </div>
+ <div class="plate"><img src="images/kacchi-biryani.svg" alt="Kacchi biryani" data-k="kacchi-biryani"><span class="fl f1">🔥 Chef's pick<b>Kacchi Biryani</b></span><span class="fl f2">🛵 Delivery in 35 min</span></div>
+</div></section>
+
+<section class="strip"><div class="wrap sg">
+ <div><b>Dine in</b><span>Family and group seating</span></div>
+ <div><b>Home delivery</b><span>Across Chattogram city</span></div>
+ <div><b>Catering</b><span>Weddings and office lunch</span></div>
+</div></section>
+
+<section class="wrap" id="menu">
+ <div class="head"><h2>Our menu</h2><p>Every dish is cooked to order. Tap Add to build your order, then send it to us on WhatsApp.</p></div>
+ <div class="tabs" id="tabs" role="group" aria-label="Menu category"></div>
+ <div class="mgrid" id="mgrid"></div>
+</section>
+
+<section class="wrap"><div class="special">
+ <img src="images/seekh-kebab.svg" alt="Seekh kebab" data-k="seekh-kebab">
+ <div><span class="tag y">Every Friday</span><h2>Kebab night, 7pm onwards</h2><p>Unlimited seekh kebab, naan and chutney for ৳899 per person. Live grill, no booking fee for groups of 4 or more.</p><a href="#reserve" class="btn">Reserve for Friday</a></div>
+</div></section>
+
+<section class="wrap" id="story"><div class="sg2">
+ <div class="stext"><h2>A kitchen built on slow fire</h2>
+  <p>Ember &amp; Spice started in 2014 as a small lunch counter on the Chattogram port road. We still cook biryani in sealed pots over low heat, and we still grind our masala in-house every morning.</p>
+  <p>No shortcuts, no frozen meat. Just honest food and a table big enough for the whole family.</p>
+  <div class="nums"><div><b>12</b>years</div><div><b>40+</b>dishes</div><div><b>80k</b>guests served</div></div>
+ </div>
+ <img src="images/morog-polao.svg" alt="Morog polao" data-k="morog-polao">
+</div></section>
+
+<section class="wrap" id="gallery">
+ <div class="head"><h2>From our kitchen</h2></div>
+ <div class="gal"><img src="images/hilsa-fry.svg" alt="Hilsa fry" data-k="hilsa-fry"><img src="images/mutton-rezala.svg" alt="Mutton rezala" data-k="mutton-rezala"><img src="images/butter-naan.svg" alt="Butter naan" data-k="butter-naan"><img src="images/falooda.svg" alt="Falooda" data-k="falooda"><img src="images/beef-tehari.svg" alt="Beef tehari" data-k="beef-tehari"><img src="images/firni.svg" alt="Firni" data-k="firni"></div>
+</section>
+
+<section class="reserve" id="reserve"><div class="wrap rg">
+ <div><h2>Book a table</h2><p>Reserve online and we will confirm by phone within 30 minutes.</p>
+  <ul class="info"><li><b>Hours</b>Every day, 12:00 pm – 11:00 pm</li><li><b>Address</b>GEC Circle, Chattogram</li><li><b>Phone</b>+880 1XXX-XXXXXX</li></ul></div>
+ <form id="rf">
+  <input required placeholder="Your name" aria-label="Your name">
+  <input required type="tel" placeholder="Phone number" aria-label="Phone">
+  <div class="r2"><input required type="date" id="date" aria-label="Date"><select aria-label="Time"><option>12:30 pm</option><option>1:30 pm</option><option>2:30 pm</option><option>7:00 pm</option><option selected>8:00 pm</option><option>9:00 pm</option></select></div>
+  <select aria-label="Guests"><option>1 guest</option><option selected>2 guests</option><option>3–4 guests</option><option>5–8 guests</option><option>9+ guests</option></select>
+  <button class="btn big">Request reservation</button><p id="rmsg" role="status"></p>
+ </form>
+</div></section>
+
+<section class="wrap" id="reviews">
+ <div class="head"><h2>What guests say</h2></div>
+ <div class="revs">
+  <blockquote><div class="st">★★★★★</div><p>The kacchi biryani is the best in the city. Meat falls off the bone and the rice is perfectly spiced.</p><cite>Rakib H.</cite></blockquote>
+  <blockquote><div class="st">★★★★★</div><p>Great for family dinners. Staff were patient with the kids and the firni was a lovely finish.</p><cite>Sumaiya K.</cite></blockquote>
+  <blockquote><div class="st">★★★★☆</div><p>Ordered delivery for an office lunch. Arrived hot and on time. Portions are generous.</p><cite>Arif M.</cite></blockquote>
+ </div>
+</section>
+
+<footer><div class="wrap fg">
+ <div><a href="#top" class="logo">Ember<span>&amp;</span>Spice</a><p>Slow-cooked Bangladeshi food in Chattogram.</p></div>
+ <div><h4>Visit</h4><p>GEC Circle, Chattogram<br>12pm – 11pm daily</p></div>
+ <div><h4>Contact</h4><p>+880 1XXX-XXXXXX<br>hello@emberspice.example</p></div>
+</div><p class="copy">© 2026 Ember &amp; Spice. Demo website.</p></footer>
+
+<div class="obar" id="obar" aria-live="polite"><div><b id="oc">0 items</b><span id="ot"></span></div><button class="btn" id="oclear" type="button">Clear</button><a class="btn y" id="owa" target="_blank" rel="noopener">Order on WhatsApp</a></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
